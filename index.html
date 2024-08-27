@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafío Alura</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+          <img src="/images/Alura.png" alt="logo de alura" />
+        </header>
+        <main>
+          <form class="form__section">
+            <textarea
+              class="form__input"
+              name="mensaje"
+              id="miTextarea"
+              cols="30"
+              rows="10"
+              placeholder="Ingrese el texto aquí"
+            ></textarea>
+            <div class="btn__container">
+              <div class="alert__msj">
+                <img src="images/alert.svg" alt="alert" /><span
+                  >Solo letras minúsculas y sin acento</span
+                >
+              </div>
+            </div>
+            <div class="submit__container">
+              <input
+                class="form__btn"
+                type="submit"
+                value="Encriptar"
+                id="encriptarBtn"
+              />
+              <input
+                class="form__btn--secondary"
+                type="submit"
+                value="Desencriptar"
+                id="desencriptarBtn"
+              />
+            </div>
+          </form>
+          <aside class="result">
+            <img src="images/searching.png" alt="Imagen buscando" class="result__img" id="searchImg"/>
+            <div id="carga" class="loader hidden"></div>
+            <div class="result__container">
+              <h3 id="noMessageTitle" class="result__title">Ningún mensaje fue encontrado</h3>
+              <p id="noMessageText" class="result__text">Ingresa el texto que deseas encriptar o desencriptar</p>
+              <p id="result__text" class="result__text hidden"></p>
+              <button id="copiarBtn" class="form__btn--secondary hidden">
+                Copiar
+              </button>
+            </div>
+          </aside>
+        </main>
+        <script src="app.js"></script>
+      </body>
+    
+      <footer class="site__footer">
+        <p>Desarrollado por Marieva Benitez Vindiola</p>
+    </footer>
+    </html>
+
